@@ -1,10 +1,12 @@
 import React from 'react'
-import Spotlight from '../Spotlight.js/Spotlight'
+import Movies from './Movies/Movies'
+import Spotlight from './Spotlight/Spotlight'
 
 const HomePage = () => {
   return (
     <div>
       <Spotlight />
+      <Movies />
     </div>
   )
 }

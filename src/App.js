@@ -1,6 +1,7 @@
-import './App.css';
+
 import HomePage from './components/HomePage/HomePage';
 import Header from './components/shared/Header/Header';
+import './App.css';
 function App() {
   return (
     <>

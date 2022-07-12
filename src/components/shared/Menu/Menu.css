@@ -12,6 +12,10 @@
     margin: 0 auto;
 }
 
+.nav-bar .parent .menu-item-level-0
+{
+    position: relative;
+}
 .nav-bar .parent, .nav-bar .parent .menu-item-level-0
 {
     padding: 0;
@@ -25,12 +29,12 @@
 }
 
 .nav-bar .parent .menu-item-level-0>.anchor 
-{
+{   
+    color: #fff;
     display: flex; 
     align-items: center; 
     justify-content: center;
-    padding: 0 22px;
-    color: #fff;
+    padding: 0 22px; 
     font-size: 21px;
     text-align: center;
 }
@@ -44,4 +48,53 @@
 .menu-icon
 {
     margin-left: 10px;
+}
+
+/* Submenu  */
+.nav-bar .parent .menu-item-level-0>.menu-level-1 { 
+    display: flex; 
+    flex-direction: column;
+    background-color: #142445;
+    border-radius: 0 0 6px 6px;
+    display: none;
+    max-height: calc(100vh - 150px);
+    height: auto;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    margin-top: -1px;
+}
+
+.nav-bar .parent .menu-item-level-0>.menu-level-1 li:first-child
+{
+    padding-top: 20px;
+}
+
+.nav-bar .parent .menu-item-level-0>.menu-level-1 .anchor {
+    color: #fff;
+    font-size: 16px;
+    padding: 0 18px 22px; 
+    display: flex;
+}
+
+
+/* Show Submenu On Hover Click */
+
+li.menu-item.menu-item-level-0:hover>.menu-level-1 {
+    display: block;
+}
+
+li.menu-item-level-0:hover a {
+    background: #0c2039; 
+}
+
+li.menu-item:hover>a{
+    color: #f4ce24 !important;
 }
