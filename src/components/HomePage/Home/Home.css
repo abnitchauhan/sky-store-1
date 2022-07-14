@@ -1,0 +1,50 @@
+.movie-cards-section.no-mini-banners {
+    color: white; 
+}
+
+.movie-cards-section.no-mini-banners .thin-text{
+padding: 5px 0 0 10px;
+}
+/* 
+.container.movie-cards-section.no-mini-banners .row {
+    margin: 0;
+} */
+
+/* .movie-cards-section.no-mini-banners .thin-text {
+    padding: 5px 0 0 0px;
+} */
+.movie-details .movie-text
+{
+    margin-top: 11px;
+    max-height: 44px;
+    line-height: 22px;
+    overflow: hidden; 
+    font-size: 16px;
+    overflow-wrap: break-word;
+}
+
+.main-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ 
+
+.movie-details { 
+    max-width: 180px;
+    padding: 15px 10px;
+}
+
+
+.movie-box img {
+    width: 100%;
+}
+
+
+@media (min-width: 801px) 
+{
+.movie-cards-section {
+    position: relative;
+    margin-top: -50px;
+}
+}

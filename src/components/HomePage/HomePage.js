@@ -1,12 +1,12 @@
 import React from 'react'
-import Movies from './Movies/Movies'
+import Home from './Home/Home'
 import Spotlight from './Spotlight/Spotlight'
 
 const HomePage = () => {
   return (
     <div>
       <Spotlight />
-      <Movies />
+      <Home />
     </div>
   )
 }

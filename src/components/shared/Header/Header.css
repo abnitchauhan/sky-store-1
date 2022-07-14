@@ -95,3 +95,57 @@ img.main-logo {
     padding-right: 15px;
     color: white;
 }
+
+/* Search ICON */
+
+span.search-active {
+    position: absolute;
+    top: 8px;
+    left: 2;
+    font-size: 18px;
+    right: 5px;
+    color: #c1c1c1;
+}
+
+
+.header-bar .header-right-container .search-inner-wrapper {
+    width: 115px; 
+    height: 32px;
+    margin-left: 20px;
+    position: relative; 
+    flex-shrink: 0;
+}
+input.search-input__textbox {
+    width: 115px;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+input.search-input__textbox {
+    transition: width .2s linear;
+    width: 115px;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    padding: 7px 30px 7px 7px;
+}
+
+
+.search-input__container
+{
+    position: absolute;
+    right: 0;
+}
+.search-input
+{
+    display: flex;
+
+}
+
+input.search-input__textbox.focused
+{
+    width: 324px;
+}

@@ -91,7 +91,7 @@ li.menu-item.menu-item-level-0:hover>.menu-level-1 {
     display: block;
 }
 
-li.menu-item-level-0:hover a {
+li.menu-item-level-0:hover>a {
     background: #0c2039; 
 }
 
