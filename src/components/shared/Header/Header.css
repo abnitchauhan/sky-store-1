@@ -100,9 +100,9 @@ img.main-logo {
 
 span.search-active {
     position: absolute;
-    top: 8px;
+    top: 5px;
     left: 2;
-    font-size: 18px;
+    font-size: 16px;
     right: 5px;
     color: #c1c1c1;
 }
@@ -130,7 +130,7 @@ input.search-input__textbox {
     outline: none;
     box-shadow: none;
     border: none;
-    padding: 7px 30px 7px 7px;
+    padding: 3px 30px 3px 5px;
 }
 
 
@@ -148,4 +148,64 @@ input.search-input__textbox {
 input.search-input__textbox.focused
 {
     width: 324px;
+}
+
+/* Hidder Hamburger */
+.header-bar .header-left-container .toggle-navigation .text {
+    margin-left: 14px;
+    font-size: 1.125rem;
+    vertical-align: -.2ex;
+}
+
+.hidden-b1
+{
+    display: none;
+}
+
+/* Header CSS Media query */ 
+@media  (max-width: 800px)
+{
+    .head-wrapper,header .header-bar {
+        height: 61px;
+    }
+
+    .hidden-b1
+{
+    display: block;
+}
+
+    .header-left-container {
+        position: absolute;
+        left: 0;
+    }
+    .header-left-container {
+        position: absolute;
+        left: 0;
+    }
+    .header-left-container .toggle-navigation {
+        color: white;
+    }
+    .nav-bar-wrapper {
+        display: none;
+    }
+    .logo-wrapper {
+        height: 61px; 
+    }
+    img.main-logo {
+        max-height: 22px;
+    }
+    .header-right-container.search-hidden {
+        display: none;
+    }
+
+    .toggle-search.hidden-b1 {
+        position: absolute;  
+        right: 0;
+    }
+
+    .toggle-search.hidden-b1 button
+    {
+        color: white;
+    }
+
 }

@@ -1,8 +1,9 @@
 import React from 'react'
+import MovieCard from '../MovieCard/MovieCard';
 
 const PreOrder = () => {
   return (
-    <div>PreOrder</div>
+    <MovieCard title="Pre Order"/>    
   )
 }
 

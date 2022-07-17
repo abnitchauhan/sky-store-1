@@ -1,8 +1,11 @@
 import React from 'react'
+import MovieCard from '../MovieCard/MovieCard';
 
 const MostPopular = () => {
   return (
-    <div>MostPopular</div>
+    <>
+    <MovieCard title="Most Popular" />
+   </>
   )
 }
 

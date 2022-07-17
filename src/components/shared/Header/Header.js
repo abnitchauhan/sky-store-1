@@ -6,11 +6,23 @@ import Menu from '../Menu/Menu';
 
 const Header = () => { 
   const [activeSearch, setActiveSearch] = useState(false); 
+  const [isSearch, setIsSearch] = useState(false); 
   const addFocusHandler = () =>{
     setActiveSearch(true);
   } 
   const removeFocusHandler = () =>{
     setActiveSearch(false);
+ }
+
+ const searchHandler = () =>{
+  if(isSearch)
+  {
+    setIsSearch(false);
+  }
+  else
+  {
+    setIsSearch(true)
+  }
  }
 
   return (
@@ -21,6 +33,13 @@ const Header = () => {
             <div className='header-inner-wrapper'>
               <div className='logo-wrapper'>
                 {/* Left Sidebar Hamburger */} 
+
+                <div className="header-left-container">
+                  <button className="hidden-b1 toggle-navigation btn btn--icon">
+                  <span className='hamburger'><i className="fa-solid fa-bars"></i></span>
+                    <span className="text hidden-b3">Browse</span>
+                    </button>
+                  </div>
 
                 {/* Main Logo */} 
                   <Link to='/' className="logo-anchor anchor">
@@ -49,9 +68,21 @@ const Header = () => {
                         <span className="search-active"><i className="fa-solid fa-magnifying-glass"></i></span>
                       </div>
                     </section>
-                  </div>
-                   
+                  </div>  
                 </div> 
+
+              {/* Short Search Button */}
+              <div className="toggle-search hidden-b1">
+                    <div className="google-cast-button"> 
+                      </div>
+                      <button className="btn btn--icon icon-clip-fix" onClick={searchHandler}>
+                        {isSearch ? <span className="search-text">Cancel</span> : <span className="search-icon"> 
+                         <i className="fa-solid fa-magnifying-glass"></i>
+                        </span>} 
+                        
+                        </button>
+                        </div>
+
               </div>
             </div>
 

@@ -1,8 +1,9 @@
 import React from 'react'
+import MovieCard from '../MovieCard/MovieCard'
 
 const Under5 = () => {
   return (
-    <div>Under5</div>
+    <MovieCard title="Under 5" />
   )
 }
 

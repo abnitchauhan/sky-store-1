@@ -1,8 +1,11 @@
 import React from 'react'
+import MovieCard from '../MovieCard/MovieCard'
 
 const SkyStorePremiere = () => {
   return (
-    <div>SkyStorePremiere</div>
+    <>
+    <MovieCard title="SkyStore Premiere" />
+    </>
   )
 }
 

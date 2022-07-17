@@ -1,6 +1,7 @@
 
 import HomePage from './components/HomePage/HomePage';
 import Header from './components/shared/Header/Header'; 
+import Footer from'./components/shared/Footer/Footer';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AtoZ from'./components/HomePage/Movies/AtoZ';
@@ -38,27 +39,27 @@ function App() {
     <Header />
       <Switch>
         <Route exact path="/"><HomePage /></Route>
-        <Route exact path="/atoz"><AtoZ /></Route>
-        <Route exact path="/browse"><Browse /></Route>
-        <Route exact path="/movieboxsets"><MovieBoxSets /></Route>
-        <Route exact path="/newtobuy"><NewToBuy /></Route>
-        <Route exact path="/newtorent"><NewToRent /></Route>
-        <Route exact path="/officialfilmchart"><OfficialFilmChart /></Route>
-        <Route exact path="/preorder"><PreOrder /></Route>
-        <Route exact path="/storepicks"><StorePicks /></Route>
-        <Route exact path="/superherosavings"><SuperHeroSavings /></Route>
-        <Route exact path="/under3"><Under3 /></Route>
-        <Route exact path="/under4"><Under4 /></Route>
-        <Route exact path="/under5"><Under5 /></Route>
-        <Route exact path="/skystorepremiere"><SkyStorePremiere /></Route> 
-        <Route exact path="/skyvipgifts"><SkyVipGifts /></Route>
-        <Route exact path="/all"><All /></Route>
-        <Route exact path="/comedy"><Comedy /></Route>
-        <Route exact path="/drama"><Drama /></Route>
-        <Route exact path="/kids"><Kids /></Route>
-        <Route exact path="/mostpopular"><MostPopular /></Route>
-        <Route exact path="/newtostore"><NewToStore /></Route>
-        <Route exact path="/redeemvoucher"><RedeemVoucher /></Route> 
+        <Route  path="/atoz"><AtoZ /></Route>
+        <Route  path="/browse"><Browse /></Route>
+        <Route  path="/movieboxsets"><MovieBoxSets /></Route>
+        <Route  path="/newtobuy"><NewToBuy /></Route>
+        <Route  path="/newtorent"><NewToRent /></Route>
+        <Route  path="/officialfilmchart"><OfficialFilmChart /></Route>
+        <Route  path="/preorder"><PreOrder /></Route>
+        <Route  path="/storepicks"><StorePicks /></Route>
+        <Route  path="/superherosavings"><SuperHeroSavings /></Route>
+        <Route  path="/under3"><Under3 /></Route>
+        <Route  path="/under4"><Under4 /></Route>
+        <Route  path="/under5"><Under5 /></Route>
+        <Route  path="/skystorepremiere"><SkyStorePremiere /></Route> 
+        <Route  path="/skyvipgifts"><SkyVipGifts /></Route>
+        <Route  path="/all"><All /></Route>
+        <Route  path="/comedy"><Comedy /></Route>
+        <Route  path="/drama"><Drama /></Route>
+        <Route  path="/kids"><Kids /></Route>
+        <Route  path="/mostpopular"><MostPopular /></Route>
+        <Route  path="/newtostore"><NewToStore /></Route>
+        <Route  path="/redeemvoucher"><RedeemVoucher /></Route> 
 
         {/* Authentication */}
         <Route exact path="/signin"><SignIn /></Route>
@@ -68,8 +69,9 @@ function App() {
         <Route exact path="/details"><Details /></Route> 
 
       </Switch>  
+      
+    <Footer />    
     </Router>
-        
     
     </>
   );

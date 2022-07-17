@@ -27,8 +27,13 @@ body{
     color: white;
 }
 
+a, body, div, h1, h2, h3, h4, input, li, p
+{
+    color: white;
+}
+
 dl, ol, ul {
-    margin: 0 !important; 
+    margin: 0 ; 
 }
 
 a{

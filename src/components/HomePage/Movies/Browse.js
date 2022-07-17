@@ -1,8 +1,10 @@
 import React from 'react'
-
+import MovieCard from '../MovieCard/MovieCard'
 const Browse = () => {
   return (
-    <div>Browse</div>
+    <>
+     <MovieCard title="Browse Movies"/>    
+    </>
   )
 }
 

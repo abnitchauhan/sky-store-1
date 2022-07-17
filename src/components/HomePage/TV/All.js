@@ -1,8 +1,11 @@
 import React from 'react'
+import MovieCard from '../MovieCard/MovieCard'
 
 const All = () => {
   return (
-    <div>All</div>
+   <>
+    <MovieCard title="All" />
+   </>
   )
 }
 

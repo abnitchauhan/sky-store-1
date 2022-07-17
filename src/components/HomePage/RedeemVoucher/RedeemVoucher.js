@@ -1,8 +1,8 @@
 import React from 'react'
-
+import MovieCard from '../MovieCard/MovieCard'
 const RedeemVoucher = () => {
   return (
-    <div>RedeemVoucher</div>
+    <MovieCard title="Redeem Vouchers"/>
   )
 }
 

@@ -1,8 +1,9 @@
 import React from 'react'
+import MovieCard from '../MovieCard/MovieCard';
 
 const MovieBoxSets = () => {
   return (
-    <div>MovieBoxSets</div>
+    <MovieCard title="Movie Box Sets"/>    
   )
 }
 

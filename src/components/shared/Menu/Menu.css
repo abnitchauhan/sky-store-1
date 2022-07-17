@@ -98,3 +98,10 @@ li.menu-item-level-0:hover>a {
 li.menu-item:hover>a{
     color: #f4ce24 !important;
 }
+
+/* Active Link */
+
+.nav-bar .parent .menu-item-level-0 .active
+{
+    color: #f4ce24;
+}       
