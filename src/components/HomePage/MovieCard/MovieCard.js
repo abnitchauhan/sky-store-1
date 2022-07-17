@@ -32,11 +32,7 @@ const MovieCard = (props) => {
 
     <>
       <div className={`container movie-cards-section no-mini-banners ${props.pathname ? '': 'no-banner'}`}>
-          <div className="row">
-                <div className="col-md-12"> 
-                  <h2 className='thin-text'>{props.title}</h2>
-                </div>
-            </div>
+          <h2 className='thin-text'>{props.title}</h2> 
             <div className="main-box"> 
                 {movies.slice(0,limit).map((movie,key) =>{
                   return( 

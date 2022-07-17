@@ -37,7 +37,7 @@ const Header = () => {
                 <div className="header-left-container">
                   <button className="hidden-b1 toggle-navigation btn btn--icon">
                   <span className='hamburger'><i className="fa-solid fa-bars"></i></span>
-                    <span className="text hidden-b3">Browse</span>
+                    <span className="text hidden-b3 hidden-xs">Browse</span>
                     </button>
                   </div>
 

@@ -209,3 +209,11 @@ input.search-input__textbox.focused
     }
 
 }
+
+@media (max-width: 426px)  
+{
+    .hidden-b3
+    {
+        display: none;
+    }
+}
